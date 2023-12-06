@@ -1,0 +1,152 @@
+@model List<LotteriaView.Models.BillViewModel>
+@inject HttpClient _httpClient
+@using Newtonsoft.Json
+@{
+    _httpClient.BaseAddress = new Uri("https://localhost:7260/api");
+}
+<div class="row category" id="myDIV">
+    <div class="order" style="margin-top: 30px">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white box-shadow mb-3">
+            <div class="container-fluid nav-bar-content">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between nav-bar-name">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item list-nav-item">
+                            <a asp-action="HistoryOrder" asp-controller="Home"  class="nav-link text-dark item-nav-bar">Lịch sử mua hàng</a>
+                        </li>
+                        <li class="nav-item list-nav-item">
+                            <a asp-action="HistoryOrder" asp-controller="Home" asp-route-status="0" class="nav-link text-dark item-nav-bar">Chờ xác nhận</a>
+                        </li>
+                        <li class="nav-item list-nav-item">
+                            <a asp-action="HistoryOrder" asp-controller="Home" asp-route-status="1" class="nav-link text-dark item-nav-bar">Chờ nhận hàng</a>
+                        </li>
+                        <li class="nav-item list-nav-item">
+                            <a asp-action="HistoryOrder" asp-controller="Home" asp-route-status="2"  class="nav-link text-dark item-nav-bar">Đơn hàng đã nhận</a>
+                        </li>
+                        <li class="nav-item list-nav-item">
+                            <a asp-action="HistoryOrder" asp-controller="Home" asp-route-status="3" class="nav-link text-dark item-nav-bar">Đã hủy</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="sale" style="margin-top: 50px">
+    @foreach (var bill in Model)
+    {
+        <div class="card mb-3">
+            <div class="card-header">
+                <h5 class="card-title">Mã đơn hàng: @bill.Id</h5>
+                <span>
+                    Trạng thái:    <h6 class="
+    @(bill.Status == 0 || bill.Status == 3 ? "red-text" :
+      (bill.Status == 1 ? "green-text" : "blue-text")
+    )">
+                        @(bill.Status == 0 ? "Chưa xác nhận" : (bill.Status == 1 ? "Đã xác nhận/Chờ nhận hàng" : (bill.Status == 2 ? "Đã nhận hàng" : "Đơn bị hủy")))
+                    </h6>
+                </span>
+             
+                <p class="card-text">Người dùng: @bill.Register.UserName (@bill.Register.Email)</p>
+                <p class="card-text">Thời gian đặt hàng: (@bill.Created)</p>
+                <div class="card-text>">
+                    @if(bill.Status == 0)
+                    {
+                        <form asp-action="CancelOrder" method="post" asp-controller="Home">
+                        <input value="@bill.Id" asp-for="@bill.Id" hidden>
+                         
+                            <input id="note-input" placeholder="Lý do hủy đơn" asp-for="@bill.Note" type="text">
+                            <span id="note-error" class="text-danger"></span>
+                            <button type="submit" class="btn btn-danger">Hủy đơn hàng</button>
+                        </form>
+                     
+
+                     
+                    }
+                    @if (bill.Status == 1)
+                    {
+                        <a asp-action="ConfirmOrder" asp-controller="Home" asp-route-billId="@bill.Id" class="btn btn-primary">Đã nhận hàng</a>
+                    }
+                </div>
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Ảnh sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Số lượng</th>
+                            <th>Tổng tiền</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in bill.BillDetails)
+                        {
+                            ProductViewModel prd = new ProductViewModel();
+                            HttpResponseMessage responseMessage = _httpClient.GetAsync(_httpClient.BaseAddress + $"/Product/GetProduct/{item.ProductId}").Result;
+                            if (responseMessage.IsSuccessStatusCode)
+                            {
+                                string data = responseMessage.Content.ReadAsStringAsync().Result;
+                                prd = JsonConvert.DeserializeObject<ProductViewModel>(data);
+                            }
+                            <tr>
+                                <td>@prd.Name</td>
+                                <td><img src="data:image/jpeg;base64,@prd.ProductString" style="width: 100px" /></td>
+                                <td>@prd.Price</td>
+                                <td>@item.Quantity</td>
+                                @{
+                                    double thanhtien = (@item.Quantity) * (@item.Price);
+                                }
+                                <td class="item-total">@thanhtien.ToString("N0") VND</td>
+                            </tr>
+
+                        }
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>@bill.Total.ToString("N0") VND</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+          
+        </div>
+    }
+</div>
+<div>
+    @if (Model.Count == 0)
+    {<div class="row" style="margin-top: -100px">
+        <div class="col-4"></div>
+        <div class="col-4 content-no-data">
+            <img src="~/img/funny-404-error-page-design.gif" style="width: 100%" />
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <p style="font-size: 24px; font-weight: 700;">Đơn hàng của bạn đang</p> &nbsp
+                <p style="font-size: 24px; font-weight: 700; color: red">Trống</p>
+            </div>
+        </div>
+        <div class="col-4"></div>
+        </div>
+    }
+</div>
+
+<script>
+    function validateForm() {
+        var noteInput = document.getElementById("note-input");
+        var noteError = document.getElementById("note-error");
+
+        if (noteInput.value.trim() === "") {
+            noteError.textContent = "Yêu cầu phải có lí do hủy đơn!";
+            return false; // Prevent form submission
+        } else {
+            noteError.textContent = ""; // Clear any previous error message
+            return true; // Allow form submission
+        }
+    }
+</script>
+
+

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LotteriaAPI", "LotteriaAPI\LotteriaAPI.csproj", "{B2B1190E-056F-4997-AEA0-20ECE8D85424}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LotteriaView", "LotteriaView\LotteriaView.csproj", "{895F5720-6753-424E-B6D7-320698E50AD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2B1190E-056F-4997-AEA0-20ECE8D85424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2B1190E-056F-4997-AEA0-20ECE8D85424}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2B1190E-056F-4997-AEA0-20ECE8D85424}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2B1190E-056F-4997-AEA0-20ECE8D85424}.Release|Any CPU.Build.0 = Release|Any CPU
+		{895F5720-6753-424E-B6D7-320698E50AD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{895F5720-6753-424E-B6D7-320698E50AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{895F5720-6753-424E-B6D7-320698E50AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{895F5720-6753-424E-B6D7-320698E50AD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1224CC81-9881-4368-A571-7B00047D0E64}
+	EndGlobalSection
+EndGlobal

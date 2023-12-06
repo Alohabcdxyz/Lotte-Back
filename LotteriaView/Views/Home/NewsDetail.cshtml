@@ -1,0 +1,27 @@
+@model LotteriaView.Models.NewsViewModel
+
+
+<div class="container">
+   <div class="col">
+     <div class="col-9">
+       <div>
+         <h3>@Model.Title</h3>
+                <p>@Html.Raw(Model.Detail)</p>
+                <div class="col-3">
+                    <a asp-action="Index" asp-controller="Home" class="btn btn-primary" style="border: none;
+                                                                                        -moz-border-radius: 40px;
+                                                                                        border-radius: 40px;
+                                                                                        background-color: #fff;
+                                                                                        -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.15);
+                                                                                        color: #ff5b6a;
+                                                                                        display: inline-block;
+                                                                                        font-weight: 700;
+                                                                                        padding: 5px 17px;">Quay lại</a>
+                </div>
+       </div>
+     </div>
+     <div class="col-3">
+            
+     </div>
+   </div>
+</div>

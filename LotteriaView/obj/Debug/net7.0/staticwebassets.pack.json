@@ -1,0 +1,665 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\LotteriaView.bundle.scp.css",
+      "PackagePath": "staticwebassets\\LotteriaView.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\css\\cart.css",
+      "PackagePath": "staticwebassets\\css\\cart.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\css\\swc.css",
+      "PackagePath": "staticwebassets\\css\\swc.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\about-1.png",
+      "PackagePath": "staticwebassets\\img\\about-1.png"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\banner.jpg",
+      "PackagePath": "staticwebassets\\img\\banner.jpg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\bot.png",
+      "PackagePath": "staticwebassets\\img\\bot.png"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\cate.jpg",
+      "PackagePath": "staticwebassets\\img\\cate.jpg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\combo.png",
+      "PackagePath": "staticwebassets\\img\\combo.png"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\emptycart.jpg",
+      "PackagePath": "staticwebassets\\img\\emptycart.jpg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\fb.png",
+      "PackagePath": "staticwebassets\\img\\fb.png"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\franchise-1.jpg",
+      "PackagePath": "staticwebassets\\img\\franchise-1.jpg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\funny-404-error-page-design.gif",
+      "PackagePath": "staticwebassets\\img\\funny-404-error-page-design.gif"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\gg.png",
+      "PackagePath": "staticwebassets\\img\\gg.png"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\he.png",
+      "PackagePath": "staticwebassets\\img\\he.png"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\icon-10.svg",
+      "PackagePath": "staticwebassets\\img\\icon-10.svg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\icon-7.svg",
+      "PackagePath": "staticwebassets\\img\\icon-7.svg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\icon-8.svg",
+      "PackagePath": "staticwebassets\\img\\icon-8.svg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\icon-9.svg",
+      "PackagePath": "staticwebassets\\img\\icon-9.svg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\icon-discount.svg",
+      "PackagePath": "staticwebassets\\img\\icon-discount.svg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\icon-staff.svg",
+      "PackagePath": "staticwebassets\\img\\icon-staff.svg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\loader.gif",
+      "PackagePath": "staticwebassets\\img\\loader.gif"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\login-banner.jpg",
+      "PackagePath": "staticwebassets\\img\\login-banner.jpg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\login.svg",
+      "PackagePath": "staticwebassets\\img\\login.svg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\new.jpg",
+      "PackagePath": "staticwebassets\\img\\new.jpg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\story-1.png",
+      "PackagePath": "staticwebassets\\img\\story-1.png"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\img\\user.png",
+      "PackagePath": "staticwebassets\\img\\user.png"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\js\\swc.js",
+      "PackagePath": "staticwebassets\\js\\swc.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\wwwroot\\css\\site.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\wwwroot\\favicon.ico"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\img\\banner.jpg",
+      "PackagePath": "staticwebassets\\wwwroot\\img\\banner.jpg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\img\\cate.jpg",
+      "PackagePath": "staticwebassets\\wwwroot\\img\\cate.jpg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\img\\combo.png",
+      "PackagePath": "staticwebassets\\wwwroot\\img\\combo.png"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\img\\fb.png",
+      "PackagePath": "staticwebassets\\wwwroot\\img\\fb.png"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\img\\gg.png",
+      "PackagePath": "staticwebassets\\wwwroot\\img\\gg.png"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\img\\icon-10.svg",
+      "PackagePath": "staticwebassets\\wwwroot\\img\\icon-10.svg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\img\\icon-7.svg",
+      "PackagePath": "staticwebassets\\wwwroot\\img\\icon-7.svg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\img\\icon-8.svg",
+      "PackagePath": "staticwebassets\\wwwroot\\img\\icon-8.svg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\img\\icon-9.svg",
+      "PackagePath": "staticwebassets\\wwwroot\\img\\icon-9.svg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\img\\icon-discount.svg",
+      "PackagePath": "staticwebassets\\wwwroot\\img\\icon-discount.svg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\img\\login-banner.jpg",
+      "PackagePath": "staticwebassets\\wwwroot\\img\\login-banner.jpg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\wwwroot\\img\\logo.png"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\img\\new.jpg",
+      "PackagePath": "staticwebassets\\wwwroot\\img\\new.jpg"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\wwwroot\\js\\site.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\ASP\\LotteriaAPI\\LotteriaView\\wwwroot\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.LotteriaView.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.LotteriaView.props",
+      "PackagePath": "build\\LotteriaView.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.LotteriaView.props",
+      "PackagePath": "buildMultiTargeting\\LotteriaView.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.LotteriaView.props",
+      "PackagePath": "buildTransitive\\LotteriaView.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

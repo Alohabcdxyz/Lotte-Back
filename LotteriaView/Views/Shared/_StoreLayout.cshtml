@@ -1,0 +1,25 @@
+@{
+    Layout = "_Layout.cshtml";
+}
+<div class="store">
+    <div class="banner-logo">
+        <img src="/img/logo.png" style="width: 150px"/>
+    </div>
+    <div class="navbar-store">
+ 
+            <div class="navbar-store-detail">
+                <a class="navbar-brand" style="margin-right: 100px" asp-action="Search" asp-controller="Home">Tìm cửa hàng</a>
+                <a class="navbar-brand" style="margin-right: 100px" asp-action="History" asp-controller="Home">Câu chuyện thương hiệu</a>
+                <a class="navbar-brand" asp-action="Switch" asp-controller="Home">Nhượng quyền</a>
+        </div>
+    </div>
+    <div class="navbar-store">
+
+        <div class="page-nav">
+            @RenderBody()
+        </div>
+    </div>
+
+
+
+</div>

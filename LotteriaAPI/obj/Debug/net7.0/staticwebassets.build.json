@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "CR+oeALzmAzjHAV5MGXfsctF9w1NKwpTNAMBePj2q9A=",
+  "Source": "LotteriaAPI",
+  "BasePath": "_content/LotteriaAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "LotteriaAPI\\wwwroot",
+      "Source": "LotteriaAPI",
+      "ContentRoot": "E:\\ASP\\LotteriaAPI\\LotteriaAPI\\wwwroot\\",
+      "BasePath": "_content/LotteriaAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

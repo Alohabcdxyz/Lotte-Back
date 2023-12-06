@@ -1,0 +1,116 @@
+@model LotteriaView.Models.NewsProductViewModel
+<div >
+    <div class="banner">
+        <img src="~/img/banner.jpg"/>
+    </div>
+     <div class="home-category" style="margin-top: 30px">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid home-navbar justify-content-center">
+                    <ul class="navbar-nav nav-cate">
+                        <li class="list-cate">
+                            <a class="nav-link text-dark " asp-controller="Home" asp-action="Index">
+                                <img src="~/img/icon-7.svg"/>
+                            <span>Bestseller</span>
+                            </a>
+                        </li>
+                    <li class="list-cate ">
+                            <a class="nav-link text-dark " asp-controller="Home" asp-action="Order">
+                            <img src="~/img/icon-8.svg" />
+                            <span>Đặt hàng</span>
+                        </a>
+                        </li>
+                    <li class="list-cate">
+                            <a class="nav-link text-dark " asp-controller="Home" asp-action="Index">
+                            <img src="~/img/icon-9.svg" />
+                            <span>Khuyến mãi</span>
+                        </a>
+                        </li>
+                    <li class="list-cate">
+                            <a class="nav-link text-dark " asp-controller="Home" asp-action="Index">
+                            <img src="~/img/icon-10.svg" />
+                            <span>Cửa hàng</span>
+                        </a>
+                        </li>
+                   
+                    </ul>
+            </div>
+        </nav>
+     </div>
+
+    <div id="boxes">
+        <div style="top: 50%; left: 50%; display: none;"
+             id="dialog"
+             class="window">
+            <div id="san">
+                <img src="~/img/he.png" width="450" />
+            </div>
+        </div>
+        <div style="
+          width: 2478px;
+          font-size: 32pt;
+          color: white;
+          height: 1202px;
+          display: none;
+          opacity: 0.4;
+        "
+             id="mask"></div>
+    </div>
+
+     <div class="sale">
+        <div class="sale-title">ƯU ĐÃI ĐẶC BIỆT</div>
+       <div class="row sale-combo">
+        
+            @foreach (var item in Model.Products)
+            {
+                <div class="col-3 combo-detail">
+                    <div class="thumbnail">
+                        <img src="data:image/jpeg;base64,@item.ProductString" />
+                    </div>
+                    <div class="infor">
+                        <div class="name">
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </div>
+                        <div class="infor-contain">
+                            @Html.DisplayFor(modelItem => item.Infor)
+                        </div>
+                        <div class="price">
+                            <img src="~/img/icon-discount.svg" style="margin-bottom: 8px" />
+                            @Html.DisplayFor(modelItem => item.Price)
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <button type="button" class="btn btn-primary btn-cart" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            }
+            
+        
+            <div class="col-2 see-more">
+                <a asp-action="Index" asp-controller="CategoryView"> <button>Xem thêm →</button></a>
+            </div>
+       </div>
+     </div>
+
+    <div class="news">
+        <div class="news-title">TIN TỨC</div>
+        <div class="row news-combo">
+           @foreach (var item in Model.News)
+            {
+            <div class="col-3 news-detail">
+                <div class="thumbnail">
+                        <img style="width: 246px; height: 138px" src="data:image/jpeg;base64,@item.Thumbnail" />
+                </div>
+                <div class="infor" >
+                        <div class="name" style="height: 55px">
+                            @Html.DisplayFor(modelItem => item.Title)
+                    </div>                    
+                <div class="seemore">
+                            <button><a asp-action="NewsDetail" asp-controller="Home" asp-route-id="@item.Id">Xem thêm</a></button>
+                </div>
+            </div>
+           </div>
+           }
+
+        </div>
+    </div>
+</div>

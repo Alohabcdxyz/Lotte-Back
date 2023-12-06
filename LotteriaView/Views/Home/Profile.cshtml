@@ -1,0 +1,98 @@
+@model LotteriaView.Models.RegisterViewModel
+
+<div class="row profile-container">
+  <div class="col-3"></div>
+  <div class="col-6 profile">
+        <p class="profile-title">Hồ sơ khách hàng</p>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        
+                    </th>
+                    <th scope="col">
+                     
+                    </th>
+                    <th scope="col">
+
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> <p><strong>Mã khách hàng</strong></p></td>
+                    <td><p>@Model.UserId</p></td>
+                    <td> <i class="fa-solid fa-user-pen" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></td>
+                </tr>
+                <tr>
+                    <td> <p><strong>Tên khách hàng</strong></p></td>
+                    <td><p>@Model.UserName</p></td>
+                </tr>
+                <tr>
+                    <td>  <p><strong>Email</strong></p></td>
+                    <td><p>@Model.Email</p></td>
+                </tr>
+                <tr>
+                    <td><p><strong>Chức danh</strong></p></td>            
+                    @if (Model.Role == 1)
+                    {
+                        <td>   <p>Khách hàng</p></td>
+                    }
+                </tr>
+            </tbody>
+        </table>
+  </div>
+    <div class="col-3"></div>
+</div>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Chỉnh sửa thông tin</h1>
+            </div>
+            <div class="modal-body">
+                <form asp-action="EditProfile" asp-controller="Home" method="post">
+                    <div class="mb-3">
+                        <input type="text" asp-for="UserId" value="@Model.UserId" readonly class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="UserName" class="form-label">Tên người dùng</label>
+                        <input asp-for="UserName" type="text" class="form-control">
+
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label">Email</label>
+                        <input asp-for="Email" type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Password" class="form-label">Mật khẩu</label>
+                        <input asp-for="Password" type="text" class="form-control">
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="ConfirmPassword" class="form-label">Xác nhận mật khẩu</label>
+                        <input asp-for="ConfirmPassword" type="text" class="form-control">
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+@* 0: chờ xác nhận
+1: đã xác nhận/ chờ hàng
+2: nhận hàng
+3: hủy
+ *@

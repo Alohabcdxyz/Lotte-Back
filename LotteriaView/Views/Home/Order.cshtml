@@ -1,0 +1,52 @@
+@model LotteriaView.Models.CategoryProductViewModel
+@{
+}
+<div class="row category" id="myDIV">
+    @foreach (var item in Model.Categories)
+    {
+        <div class="col-1 category-detail">
+            <div class="thumbnail">
+                <img src="data:image/jpeg;base64,@item.CategoryImage" />
+            </div>
+            <div class="name-cate" >
+                <a style="text-decoration: none" asp-route-id="@item.Id" asp-action="Order" asp-controller="Home">@Html.DisplayFor(modelItem => item.Name)</a>
+            </div>
+        </div>
+    }
+</div>
+<div class="sale" style="margin-top: 50px">
+    <div class="row sale-combo" style="display: flex; align-items: center; justify-content: center;">
+        @foreach (var item in Model.Products)
+        {
+            <div class="col-3 combo-detail">
+                <div class="thumbnail">
+                    <img src="data:image/jpeg;base64,@item.ProductString" />
+                </div>
+                <div class="infor">
+                    <div class="name">
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </div>
+                    <div class="infor-contain">
+                        @Html.DisplayFor(modelItem => item.Infor)
+                    </div>
+                    <div class="price">
+                        <img src="~/img/icon-discount.svg" style="margin-bottom: 8px" />
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </div>
+                   
+                </div>
+                <div class="cart">
+                    <a asp-action="ProductDetail" asp-controller="Home" asp-route-id="@item.Id">
+                        <button type="button" class="btn btn-primary btn-cart" title="Thêm vào giỏ hàng">Chi tiết sản phẩm</button>
+                    </a>
+                </div>
+                <div class="cart">
+                    <a asp-action="AddToCart" asp-controller="Home" asp-route-prdId="@item.Id">
+                        <button type="button" class="btn btn-primary btn-cart" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</button>
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+

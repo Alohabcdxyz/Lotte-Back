@@ -1,0 +1,43 @@
+@model LotteriaView.Models.ProductViewModel
+
+
+<div class="container">
+    <h1>Thông tin sản phầm @Model.Name</h1>
+
+    <div class="row">
+      <div class="col-6">
+            <img src="data:image/jpeg;base64,@Model.ProductString" alt="Product Image" style="max-width: 50%; height: auto;" />
+      </div>
+      <div class="col-6">
+            <h3 style="font-size: 28px; font-weight: 700; margin-bottom: 16px">
+                @Model.Name
+            </h3>
+            <h3 style="color: #ff5b6a; font-size: 24px; font-weight: 700; margin-bottom: 16px">
+                @Model.Price.ToString("N0") ₫
+            </h3>
+            <p style="border-top: 1px dashed #c4c4c4; padding-top:10px">@Model.Infor</p>
+
+      </div>
+        <div class="col-6"></div>
+        <div class="col-3">
+            <div class="cart">
+            <a asp-action="AddToCart" asp-controller="Home" asp-route-prdId="@Model.Id">
+                <button type="button" class="btn btn-primary btn-cart" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</button>
+            </a>
+            </div>
+        </div>
+        <div class="col-3">
+            <a asp-action="Order" asp-controller="Home" class="btn btn-primary" style="border: none;
+                                                                                        -moz-border-radius: 40px;
+                                                                                        border-radius: 40px;
+                                                                                        background-color: #fff;
+                                                                                        -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.15);
+                                                                                        color: #ff5b6a;
+                                                                                        display: inline-block;
+                                                                                        font-weight: 700;
+                                                                                        padding: 5px 17px;">Quay lại</a>
+        </div>
+    </div>
+   
+   
+</div>

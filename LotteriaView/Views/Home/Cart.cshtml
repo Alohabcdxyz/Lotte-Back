@@ -1,0 +1,231 @@
+@model  LotteriaView.Models.SubmitViewModel
+@inject HttpClient _httpClient
+@using Newtonsoft.Json
+@{
+    _httpClient.BaseAddress = new Uri("https://localhost:7260/api");
+    double total =- 0;
+}
+<style>
+    table {
+    text-align: center;
+    }
+
+    th, td {
+    text-align: center; 
+    }
+
+    input{
+    width: 70px;
+    outline: none;
+    border: none;
+    text-align: center;
+    }
+    .qty{
+        text-decoration: none;
+    }
+
+</style>
+
+<div class="container">
+    <div class="row">
+        @if (Model.CartViewModel.CartDetails != null && Model.CartViewModel.CartDetails.Any())
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Tên sản phẩm</th>
+                        <th scope="col">Ảnh sản phẩm</th>
+                        <th scope="col">Thông tin</th>
+                        <th scope="col">Số lượng</th>
+                        <th scope="col">Giá</th>
+                        <th scope="col">Lựa chọn</th>
+                        <th scope="col">Tổng tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.CartViewModel.CartDetails)
+                    {
+                        ProductViewModel prd = new ProductViewModel();
+                        HttpResponseMessage responseMessage = _httpClient.GetAsync(_httpClient.BaseAddress + $"/Product/GetProduct/{item.ProductId}").Result;
+                        if (responseMessage.IsSuccessStatusCode)
+                        {
+                            string data = responseMessage.Content.ReadAsStringAsync().Result;
+                            prd = JsonConvert.DeserializeObject<ProductViewModel>(data);
+                        }
+                        <tr>
+                            <td>@prd.Name</td>
+                            <td>  <img src="data:image/jpeg;base64,@prd.ProductString" style="height: 100px; width: 100px" /></td>
+                            <td>@prd.Infor</td>
+                            <td>
+
+
+                                <a class="qty" asp-action="IncreaseQuantity" asp-route-prdId="@prd.Id" asp-controller="Home" method="get" type="submit">+</a>
+
+                                <input type="number" readonly value="@item.Quantity" min="1" onchange="updateCartItemQuantity(this, @item.Price)" />
+                                <a class="qty" asp-action="DecreaseQuantity" asp-route-prdId="@prd.Id" asp-controller="Home" method="get" type="submit">-</a>
+
+                                @*  <input type="number" value="@item.Quantity" min="1" /> *@
+                            </td>
+                            <td>@item.Price </td>
+                            <td>
+                                <a asp-action="RemoveToCart" asp-controller="Home" asp-route-prdId="@prd.Id">
+                                    <button type="button" class="btn btn-outline-danger">Xóa mặt hàng</button>
+                                </a>
+                            </td>
+                            @{
+                                double thanhtien = (@item.Quantity) * (@item.Price);
+                                total += thanhtien;
+                            }
+                            <td class="item-total">@thanhtien</td>
+                        </tr>
+                    }
+                    <tr>
+                        <th></th>
+                        <td></td>
+                        <td></td>
+                        <td>
+                        </td>
+                        <td></td>
+                        <td>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Đặt hàng</button>
+                        </td>
+                        <td id="cart-total">
+                            @total
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+         
+        }
+        else
+        {
+           <div class="col-4"></div>
+           <div class="col-4">
+               <img src="~/img/emptycart.jpg" style="height: 400px"/>
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <p style="font-size: 24px; font-weight: 700;">Giỏ hàng của bạn đang</p> &nbsp
+                    <p style="font-size: 24px; font-weight: 700; color: red">Trống</p>
+              </div>
+              <div style="text-align: center; font-size: 18px">
+                  <p>Hãy mua sản phẩm đầu tiên nhé</p>
+              </div>
+                <div style=" display: flex; align-items: center; justify-content: center;">
+                <a type="button" class="btn btn-outline-primary" asp-controller="Home" asp-action="Order">Mua hàng thôi</a>
+</div>
+           </div>
+            <div class="col-4"></div>
+        }
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Xác nhận đơn hàng</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Sản phẩm</th>
+                                <th scope="col">Ảnh sản phẩm</th>
+                                <th scope="col">Số lượng</th>
+                                <th scope="col">Giá</th>
+                                <th scope="col">Tổng tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @foreach (var item in Model.CartViewModel.CartDetails)
+                            {
+                   
+                                ProductViewModel prd = new ProductViewModel();
+                                HttpResponseMessage responseMessage = _httpClient.GetAsync(_httpClient.BaseAddress + $"/Product/GetProduct/{item.ProductId}").Result;
+                                if (responseMessage.IsSuccessStatusCode)
+                                {
+                                    string data = responseMessage.Content.ReadAsStringAsync().Result;
+                                    prd = JsonConvert.DeserializeObject<ProductViewModel>(data);
+                                }
+                                <tr>
+                                    <td>@prd.Name</td>
+                                    <td>  <img src="data:image/jpeg;base64,@prd.ProductString" style="height: 100px; width: 100px" /></td>
+                                    <td> <input type="number" readonly value="@item.Quantity" min="1" onchange="updateCartItemQuantity(this, @item.Price)" /></td>
+                                    <td>@item.Price </td>
+                                    @{
+                                        double thanhtien = (@item.Quantity) * (@item.Price);
+                                       
+                                    }
+                                    <td class="item-total">@thanhtien</td>
+                                </tr>
+                            }
+                            <tr>
+                                <td colspan="4">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                        <label for="floatingTextarea2"> Ghi chú</label>
+                                    </div>
+                                </td>
+                                <td id="cart-total">
+                                    @total
+                                </td>
+                            </tr>
+
+                            @{
+                                RegisterViewModel regis = new RegisterViewModel();
+                                HttpResponseMessage responseMessage1 = _httpClient.GetAsync(_httpClient.BaseAddress + $"/Register/GetDetailUser/{Model.CartViewModel.UserId}").Result;
+                                if (responseMessage1.IsSuccessStatusCode)
+                                {
+                                    string data = responseMessage1.Content.ReadAsStringAsync().Result;
+                                    regis = JsonConvert.DeserializeObject<RegisterViewModel>(data);
+                                }
+                            }
+                        
+                        </tbody>
+                    </table>
+
+                    <div>
+                        <form asp-action="AddToBill" asp-controller="Home" method="post">
+
+                            <div class="mb-3">
+                                <label asp-for="Phone" class="form-label">So dien thoai</label>
+                                <input asp-for="Phone" type="text" class="form-control">
+
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="Address" class="form-label">Dia chi</label>
+                                <input asp-for="Address" type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" asp-for="Total" value="@total" hidden class="form-control">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Mua hàng</button>
+
+                        </form>
+
+                    </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script>
+    function updateCartItemQuantity(inputElement, price) {
+        const quantity = parseInt(inputElement.value);
+        const thanhtien = quantity * price;
+        inputElement.closest('tr').querySelector('.item-total').innerText = thanhtien;
+        recalculateTotal();
+    }
+
+    function recalculateTotal() {
+        let total = 0;
+        document.querySelectorAll('.item-total').forEach(function (itemTotal) {
+            total += parseFloat(itemTotal.innerText);
+        });
+        document.getElementById('cart-total').innerText = total;
+    }
+</script>

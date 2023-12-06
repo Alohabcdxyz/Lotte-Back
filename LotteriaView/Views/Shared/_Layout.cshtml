@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Lotteria Việt Nam
+    </title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/swc.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Lotteria.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/cart.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+    
+</head>
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    HttpContext httpContext = HttpContextAccessor.HttpContext;
+}
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid nav-bar-content">
+                <a class="navbar-brand image-logo" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/img/logo.png" />
+                </a>
+                @if (httpContext.Session.GetString("key") != null)
+                {
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between nav-bar-name">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item list-nav-item">
+                                <a class="nav-link text-dark item-nav-bar" asp-controller="Home" asp-action="Index">Bestseller</a>
+                            </li>
+                            <li class="nav-item list-nav-item">
+                                <a class="nav-link text-dark item-nav-bar" asp-controller="Home" asp-action="Order">Đặt hàng</a>
+                            </li>
+                            <li class="nav-item list-nav-item">
+                                <a class="nav-link text-dark item-nav-bar" asp-controller="Home" asp-action="Search">Cửa hàng</a>
+                            </li>
+                            <li style="margin-left: 200px" class="nav-item list-nav-item">
+                                <a class="nav-link text-dark item-nav-bar" asp-controller="Home" asp-action="Cart">Giỏ hàng</a>
+                            </li>
+                            <li class="dropdown">
+                                <button class="btn btn-secondary" style="border: none; outline: none; background: white; color: black" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-regular fa-user"></i>
+                                </button>
+                                <ul class="dropdown-menu" style="text-align: center">
+                                    <li class="nav-item list-nav-item">
+                                        <a class="nav-link text-dark item-nav-bar" asp-action="Profile" asp-controller="Home">Hồ sơ <i class="fa-regular fa-address-card"></i></a>
+                                    </li>
+                                    <li class="nav-item list-nav-item">
+                                        <a class="nav-link text-dark item-nav-bar" asp-controller="Home" asp-action="HistoryOrder">Lịch sử mua hàng <i class="fa-regular fa-clock"></i></a>
+                                    </li>
+                                    <li class="nav-item list-nav-item">
+                                        <a class="nav-link text-dark item-nav-bar" asp-controller="RegisterView" asp-action="Logout">Đăng xuất <i class="fa-solid fa-door-open"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                }
+                else
+                {
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between nav-bar-name">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item list-nav-item">
+                                <a class="nav-link text-dark item-nav-bar" asp-controller="RegisterView" asp-action="Login">Đăng nhập</a>
+                            </li>
+                            <li class="nav-item list-nav-item">
+                                <a class="nav-link text-dark item-nav-bar" asp-controller="RegisterView" asp-action="Register">Đăng ký</a>
+                            </li>
+                        </ul>
+                    </div>
+                 
+                }
+
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <button style=" position: -webkit-sticky;
+    position: fixed; bottom: 20px; right: 20px; outline: none; border: none; background: none">
+        <a style="text-decoration: none;" asp-action="ChatBot" asp-controller="Home"><img src="/img/icon-staff.svg" style="width:50px"/></a>
+    </button>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <script src="~/js/swc.js" asp-append-version="true"></script>
+    @await Component.InvokeAsync("Notyf")
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
